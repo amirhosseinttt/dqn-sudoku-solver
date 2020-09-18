@@ -7,7 +7,7 @@ import numpy as np
 import random
 import copy
 
-MAX_REWARD = 1
+MAX_REWARD = 3
 MIN_REWARD = -5
 MAX_STEPS = 200
 
@@ -21,7 +21,7 @@ class MySudokuEnv(gym.Env):
     def __init__(self):
         super(MySudokuEnv, self).__init__()
 
-        self.data = self._read_data('data/mypuzzle-easy.txt')
+        self.data = self._read_data('/content/dqn-sudoku-solver/data/mypuzzle-easy.txt')
 
         self.reward_range = (MIN_REWARD, MAX_REWARD)
 
@@ -36,11 +36,11 @@ class MySudokuEnv(gym.Env):
         if self.observation[int(action / 9)] != '0':
             reward = -5
         elif self.answer[int(action / 9)] == str(action % 9 + 1):
-            reward = 1
+            reward = 3
             self.observation[int(action / 9)] = str(action % 9 + 1)
             done = True
             for i in self.observation:
-                if i == 0:
+                if i == '0':
                     done = False
                     break
         else:
@@ -56,8 +56,7 @@ class MySudokuEnv(gym.Env):
         self.observation = copy.copy(self.data[0][index_of_sudoku])
         self.observation = [x for x in str(self.observation)]
         self.answer = [x for x in str(self.answer)]
-        print(len(self.observation))
-        print(self.observation)
+
         return self.observation
 
     def render(self, mode='human', close=False):
