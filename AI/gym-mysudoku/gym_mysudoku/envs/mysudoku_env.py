@@ -21,7 +21,7 @@ class MySudokuEnv(gym.Env):
     def __init__(self):
         super(MySudokuEnv, self).__init__()
 
-        self.data = self._read_data('/home/amirhossein/Desktop/python-sudoku-generator-solver-master/AI/mypuzzle.txt')
+        self.data = self._read_data('data/mypuzzle-easy.txt')
 
         self.reward_range = (MIN_REWARD, MAX_REWARD)
 

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ed39af83-b7f6-4e4a-84a7-80b1ab0812c7" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FlaskConsoleOptions" custom-start-script="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))">
+    <envs>
+      <env key="FLASK_APP" value="app" />
+    </envs>
+    <option name="myCustomStartScript" value="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))" />
+    <option name="myEnvs">
+      <map>
+        <entry key="FLASK_APP" value="app" />
+      </map>
+    </option>
+  </component>
+  <component name="JupyterTrust" id="6b34462c-e858-4dc6-9c7b-d7d365845096" />
+  <component name="ProjectId" id="1hgM6v876feWOjXJDagQ0w32gBG" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/data" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/AI/gym-mysudoku/gym_mysudoku/envs" />
+      <recent name="$PROJECT_DIR$/AI/gym-mysudoku/gym_mysudoku/mysudoku" />
+      <recent name="$PROJECT_DIR$/AI" />
+      <recent name="$PROJECT_DIR$/sudoku-utils" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/data" />
+      <recent name="$PROJECT_DIR$/AI/gym-mysudoku/gym_mysudoku" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.main">
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="python-sudoku-generator-solver-master" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/AI" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/AI/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="sudoku" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="python-sudoku-generator-solver-master" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/sudoku-utils/sudoku.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.main" />
+        <item itemvalue="Python.sudoku" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ed39af83-b7f6-4e4a-84a7-80b1ab0812c7" name="Default Changelist" comment="" />
+      <created>1600428110692</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1600428110692</updated>
+      <workItem from="1600428111780" duration="1655000" />
+      <workItem from="1600430475289" duration="13904000" />
+      <workItem from="1600448179883" duration="4183000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1864" height="504" key="GridCell.Tab.0.bottom" timestamp="1600460205503">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1864" height="504" key="GridCell.Tab.0.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1600460205503" />
+    <state width="1864" height="504" key="GridCell.Tab.0.center" timestamp="1600460205501">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1864" height="504" key="GridCell.Tab.0.center/0.27.1920.1053@0.27.1920.1053" timestamp="1600460205501" />
+    <state width="1864" height="504" key="GridCell.Tab.0.left" timestamp="1600460205500">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1864" height="504" key="GridCell.Tab.0.left/0.27.1920.1053@0.27.1920.1053" timestamp="1600460205500" />
+    <state width="1864" height="504" key="GridCell.Tab.0.right" timestamp="1600460205502">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1864" height="504" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1600460205502" />
+    <state width="1864" height="324" key="GridCell.Tab.1.bottom" timestamp="1600431873245">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1864" height="324" key="GridCell.Tab.1.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1600431873245" />
+    <state width="1864" height="324" key="GridCell.Tab.1.center" timestamp="1600431873245">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1864" height="324" key="GridCell.Tab.1.center/0.27.1920.1053@0.27.1920.1053" timestamp="1600431873245" />
+    <state width="1864" height="324" key="GridCell.Tab.1.left" timestamp="1600431873244">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1864" height="324" key="GridCell.Tab.1.left/0.27.1920.1053@0.27.1920.1053" timestamp="1600431873244" />
+    <state width="1864" height="324" key="GridCell.Tab.1.right" timestamp="1600431873245">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1864" height="324" key="GridCell.Tab.1.right/0.27.1920.1053@0.27.1920.1053" timestamp="1600431873245" />
+    <state x="324" y="101" width="1271" height="912" key="SettingsEditor" timestamp="1600450444181">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="324" y="101" width="1271" height="912" key="SettingsEditor/0.27.1920.1053@0.27.1920.1053" timestamp="1600450444181" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/python_sudoku_generator_solver_master$main.coverage" NAME="main Coverage Results" MODIFIED="1600448858813" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/AI" />
+    <SUITE FILE_PATH="coverage/python_sudoku_generator_solver_master$sudoku.coverage" NAME="sudoku Coverage Results" MODIFIED="1600432726427" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+</project>
