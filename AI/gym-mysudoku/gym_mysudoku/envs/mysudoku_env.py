@@ -9,7 +9,7 @@ import copy
 
 MAX_REWARD = 3
 MIN_REWARD = -5
-MAX_STEPS = 200
+MAX_STEPS = 300
 
 INITIAL_ACCOUNT_BALANCE = 10000
 
@@ -21,42 +21,48 @@ class MySudokuEnv(gym.Env):
     def __init__(self):
         super(MySudokuEnv, self).__init__()
 
-        self.data = self._read_data('/content/dqn-sudoku-solver/data/mypuzzle-easy.txt')
+        self.data = self._read_data(
+            '/home/amirhossein/Desktop/python-sudoku-generator-solver-master/data/mypuzzle-easy.txt')
 
         self.reward_range = (MIN_REWARD, MAX_REWARD)
 
-        self.action_space = spaces.Discrete(729)
+        self.action_space = spaces.Discrete(11)
 
-        self.observation_space = spaces.Discrete(81)
+        self.observation_space = spaces.Discrete(82)
 
     def step(self, action):
         # Execute one time step within the environment
         self.current_step += 1
         done = False
-        if self.observation[int(action / 9)] != '0':
+        reward = 0
+        if action == 0:
+            self.index -= 1
+        elif action == 10:
+            self.index += 1
+        elif self.observation[self.index % 81] != 0:
             reward = -5
-        elif self.answer[int(action / 9)] == str(action % 9 + 1):
+        elif self.answer[self.index % 81] == action:
             reward = 3
-            self.observation[int(action / 9)] = str(action % 9 + 1)
+            self.observation[self.index % 81] = action
             done = True
             for i in self.observation:
-                if i == '0':
+                if i == 0:
                     done = False
                     break
         else:
             reward = -1
         if self.current_step > MAX_STEPS:
             done = True
-        return self.observation, reward, done, {}
+        return self.observation.append(self.index % 81), reward, done, {}
 
     def reset(self):
+        self.index = 0
         index_of_sudoku = random.randint(0, len(self.data[0]) - 1)
         self.current_step = 0
         self.answer = copy.copy(self.data[1][index_of_sudoku])
         self.observation = copy.copy(self.data[0][index_of_sudoku])
-        self.observation = [x for x in str(self.observation)]
-        self.answer = [x for x in str(self.answer)]
-
+        self.observation = [int(x) for x in str(self.observation + str(0))]
+        self.answer = [int(x) for x in str(self.answer)]
         return self.observation
 
     def render(self, mode='human', close=False):
